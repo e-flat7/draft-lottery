@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsnbsm18qquq8"]
+
+[ext_resource type="Material" uid="uid://ieg163et3vnu" path="res://src/materials/shadow.tres" id="1_1h3er"]
+[ext_resource type="Texture2D" uid="uid://b3i7i4oyid07i" path="res://src/gfx/DraftLotteryshadow2.webp" id="2_etfe0"]
+[ext_resource type="Texture2D" uid="uid://ce6gqwmglck6a" path="res://src/gfx/DraftLottery.webp" id="3_11ldh"]
+
+[node name="lottery_logo" type="Node2D"]
+
+[node name="DraftLotteryshadow" type="Sprite2D" parent="."]
+material = ExtResource("1_1h3er")
+position = Vector2(-32, 32)
+texture = ExtResource("2_etfe0")
+
+[node name="DraftLottery" type="Sprite2D" parent="."]
+texture = ExtResource("3_11ldh")

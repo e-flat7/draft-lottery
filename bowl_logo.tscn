@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc0upisusvgm6"]
+
+[ext_resource type="Material" uid="uid://ieg163et3vnu" path="res://src/materials/shadow.tres" id="1_i1l6y"]
+[ext_resource type="Texture2D" uid="uid://bbt0ynukyywcq" path="res://src/gfx/BOWLshadow2.webp" id="2_s14k4"]
+[ext_resource type="Texture2D" uid="uid://cfusggopp23dl" path="res://src/gfx/BOWL.webp" id="3_rmd6j"]
+
+[node name="bowl_logo" type="Node2D"]
+
+[node name="BowLshadow" type="Sprite2D" parent="."]
+material = ExtResource("1_i1l6y")
+position = Vector2(-32, 32)
+texture = ExtResource("2_s14k4")
+
+[node name="Bowl" type="Sprite2D" parent="."]
+texture = ExtResource("3_rmd6j")
