@@ -21,7 +21,7 @@ func _process(delta):
 	pass
 	
 	
-func _get_team():
+func get_team():
 	return team
 	# maybe make a dict for this?
 	

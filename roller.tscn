@@ -12,13 +12,16 @@ physics_material_override = SubResource("PhysicsMaterial_2nd0r")
 script = ExtResource("1_5x5qq")
 
 [node name="Hexaogon" type="Sprite2D" parent="."]
-scale = Vector2(1.5, 1.5)
+unique_name_in_owner = true
+scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_kn5a7")
 
 [node name="the one that is real cool B))))))" type="CollisionPolygon2D" parent="."]
-scale = Vector2(0.3, 0.3)
-polygon = PackedVector2Array(-1440, 1613.33, -2673.33, 0, -1400, -2453.33, 1293.33, -2513.33, 2733.33, 13.3333, 1626.67, 1660, 898, 1563, 1806, -4, 898, -1562, -908, -1558, -1823, 8, -911, 1563)
+scale = Vector2(0.15, 0.15)
+polygon = PackedVector2Array(-1440, 1613.33, -2673.33, 0, -1400, -2453.33, 1293.33, -2513.33, 2733.33, 13.3333, 1626.67, 1660, 860, 1633.33, 1806, -4, 898, -1562, -908, -1558, -1823, 8, -880, 1613.33)
 
 [node name="the one that will be gone" type="CollisionPolygon2D" parent="."]
-scale = Vector2(0.3, 0.3)
-polygon = PackedVector2Array(-975, 1688, 964, 1690, 897, 1563, -911, 1561)
+unique_name_in_owner = true
+position = Vector2(0, -2)
+scale = Vector2(0.15, 0.149731)
+polygon = PackedVector2Array(-1480, 1896.73, 1440, 1916.77, 1286.67, 1582.84, -1420, 1589.51)

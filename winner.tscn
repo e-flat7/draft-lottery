@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://5oph7vfkiheq"]
+
+[ext_resource type="Texture2D" uid="uid://bv503typ4e6au" path="res://src/gfx/overlay_white.png" id="1_1wg5q"]
+
+[node name="Node2D" type="Sprite2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+show_behind_parent = true
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_1wg5q")

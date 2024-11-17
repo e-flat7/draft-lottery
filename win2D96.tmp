@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://5oph7vfkiheq"]
+
+[ext_resource type="Script" path="res://winner.gd" id="1_hu0q1"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_hu0q1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
