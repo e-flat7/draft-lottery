@@ -45,7 +45,7 @@ func _process(delta):
 			teamlist.erase($floor.stored_winner)
 			$floor.stored_winner = -1
 			num_of_teams -= 1
-			if num_of_teams < 0:
+			if num_of_teams <= 6:
 				num_of_teams = 8
 				teamlist = [1, 2, 3, 4, 5, 6, 7 ,8]
 		ball_spawn(num_of_teams)
