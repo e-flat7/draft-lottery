@@ -1,11 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://crb07x34osmb5"]
+[gd_scene load_steps=7 format=3 uid="uid://crb07x34osmb5"]
 
 [ext_resource type="Texture2D" uid="uid://chq2m8gj6ngtm" path="res://src/gfx/ice.png" id="1_8ykba"]
+[ext_resource type="Script" path="res://lottery_scene.gd" id="1_qthf6"]
 [ext_resource type="PackedScene" uid="uid://dc0upisusvgm6" path="res://bowl_logo.tscn" id="2_d42h4"]
 [ext_resource type="PackedScene" uid="uid://bsnbsm18qquq8" path="res://lottery_logo.tscn" id="3_8h1xk"]
 [ext_resource type="PackedScene" uid="uid://b3mvwbcqh1udd" path="res://wheel.tscn" id="4_w3dpm"]
+[ext_resource type="PackedScene" uid="uid://c6g7a3ui7k75g" path="res://roller.tscn" id="5_q4idk"]
 
 [node name="LotteryScene" type="Node2D"]
+script = ExtResource("1_qthf6")
 
 [node name="Ice" type="Sprite2D" parent="."]
 texture = ExtResource("1_8ykba")
@@ -15,10 +18,13 @@ centered = false
 position = Vector2(138, 951)
 scale = Vector2(0.25, 0.25)
 
-[node name="lottery_logo" parent="." instance=ExtResource("3_8h1xk")]
-position = Vector2(960, 333)
-scale = Vector2(1.25, 1.25)
-
 [node name="Node2D" parent="." instance=ExtResource("4_w3dpm")]
-position = Vector2(960, 830)
+position = Vector2(960, 550)
 scale = Vector2(0.25, 0.25)
+
+[node name="roller" parent="." instance=ExtResource("5_q4idk")]
+position = Vector2(960, 550)
+
+[node name="lottery_logo" parent="." instance=ExtResource("3_8h1xk")]
+position = Vector2(960, 550)
+scale = Vector2(1.5, 1.5)

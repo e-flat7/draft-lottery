@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://csp5nx237q3wk"]
+
+[ext_resource type="Texture2D" uid="uid://c7yh48bgb7qxv" path="res://src/gfx/ball.png" id="1_1c03l"]
+[ext_resource type="Script" path="res://ball.gd" id="2_3c580"]
+[ext_resource type="Texture2D" uid="uid://dffbwjy4qqi0x" path="res://src/gfx/overlay_green.png" id="3_7es2p"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rxac6"]
+friction = 0.0
+rough = true
+bounce = 4.0
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_yvc6d"]
+blend_mode = 1
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_quyvm"]
+radius = 64.2806
+
+[node name="Ball" type="RigidBody2D"]
+mass = 1.057
+physics_material_override = SubResource("PhysicsMaterial_rxac6")
+can_sleep = false
+script = ExtResource("2_3c580")
+
+[node name="Ball" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_1c03l")
+
+[node name="Overlay" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+material = SubResource("CanvasItemMaterial_yvc6d")
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_7es2p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.4, 0.4)
+shape = SubResource("CircleShape2D_quyvm")
