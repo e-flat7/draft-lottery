@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0x2do5qv1c80"
-path="res://.godot/imported/STL.png-9c42a96cef0caea6fd1ca34dd0fea69a.ctex"
+uid="uid://cvox63lav5g1v"
+path="res://.godot/imported/ballshadow.png-bfa5543afe72898fe037200b027d5c37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/gfx/teamimgs/STL.png"
-dest_files=["res://.godot/imported/STL.png-9c42a96cef0caea6fd1ca34dd0fea69a.ctex"]
+source_file="res://src/gfx/ballshadow.png"
+dest_files=["res://.godot/imported/ballshadow.png-bfa5543afe72898fe037200b027d5c37.ctex"]
 
 [params]
 

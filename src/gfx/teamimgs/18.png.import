@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6oeujj1nk2jv"
-path="res://.godot/imported/TOR.png-b45656661c17f4e4db06ab3d44cc0aec.ctex"
+uid="uid://cxc42bo4l6f6w"
+path="res://.godot/imported/18.png-7fedee34f0102933d6910579cfeaffb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/gfx/teamimgs/TOR.png"
-dest_files=["res://.godot/imported/TOR.png-b45656661c17f4e4db06ab3d44cc0aec.ctex"]
+source_file="res://src/gfx/teamimgs/18.png"
+dest_files=["res://.godot/imported/18.png-7fedee34f0102933d6910579cfeaffb8.ctex"]
 
 [params]
 

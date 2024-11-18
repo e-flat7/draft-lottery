@@ -23,8 +23,8 @@ func ball_spawn(teams_remaining):
 		subballs = []
 	for ball in balls:
 		for bal in ball:
-			bal.position.x = 960
-			bal.position.y = 300
+			bal.position.x = 360 + (randi() % 20)
+			bal.position.y = 640 + (randi() % 20)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
