@@ -15,7 +15,7 @@ bounce = 4.0
 blend_mode = 1
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_v0i48"]
-radius = 93.3333
+radius = 73.6357
 
 [node name="Ball" type="RigidBody2D"]
 mass = 2.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c6g7a3ui7k75g"]
+[gd_scene load_steps=5 format=3 uid="uid://c6g7a3ui7k75g"]
 
 [ext_resource type="Script" path="res://roller.gd" id="1_5x5qq"]
 [ext_resource type="Texture2D" uid="uid://b5k3aoiegq42m" path="res://src/gfx/hexaogon.png" id="1_kn5a7"]
@@ -6,6 +6,9 @@
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2nd0r"]
 friction = 0.0
 bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_88w3q"]
+radius = 34.0588
 
 [node name="Node2D" type="StaticBody2D"]
 physics_material_override = SubResource("PhysicsMaterial_2nd0r")
@@ -25,3 +28,6 @@ unique_name_in_owner = true
 position = Vector2(0, -2)
 scale = Vector2(0.15, 0.149731)
 polygon = PackedVector2Array(-406.667, 2163.88, 373.333, 2177.24, 326.667, 1582.84, -313.333, 1582.84)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_88w3q")
