@@ -8,8 +8,8 @@
 
 [node name="DraftLotteryshadow" type="Sprite2D" parent="."]
 material = ExtResource("1_1h3er")
-position = Vector2(-32, 32)
 texture = ExtResource("2_etfe0")
+offset = Vector2(-32, 16)
 
 [node name="DraftLottery" type="Sprite2D" parent="."]
 texture = ExtResource("3_11ldh")

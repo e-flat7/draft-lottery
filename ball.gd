@@ -6,10 +6,10 @@ var team_to_colour = {
 	2: preload("res://src/gfx/overlay_orange.png"),
 	3: preload("res://src/gfx/overlay_yellow.png"),
 	4: preload("res://src/gfx/overlay_green.png"),
-	5: preload("res://src/gfx/overlay_white.png"),
+	5: preload("res://src/gfx/overlay_blue.png"),
 	6: preload("res://src/gfx/overlay_purple.png"),
-	7: preload("res://src/gfx/overlay_cyan.png"),
-	8: preload("res://src/gfx/overlay_black.png"),
+	7: preload("res://src/gfx/overlay_white.png"),
+	8: preload("res://src/gfx/overlay_brown.png"),
 }
 
 # Called when the node enters the scene tree for the first time.

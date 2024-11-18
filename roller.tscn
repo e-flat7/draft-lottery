@@ -1,14 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://c6g7a3ui7k75g"]
 
 [ext_resource type="Script" path="res://roller.gd" id="1_5x5qq"]
-[ext_resource type="Texture2D" uid="uid://b5k3aoiegq42m" path="res://src/gfx/hexaogon.png" id="1_kn5a7"]
+[ext_resource type="Texture2D" uid="uid://cjq81pvuem1mk" path="res://src/gfx/2hexagon.png" id="2_upvab"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2nd0r"]
 friction = 0.0
 bounce = 1.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_88w3q"]
-radius = 34.0588
+radius = 26.0768
 
 [node name="Node2D" type="StaticBody2D"]
 physics_material_override = SubResource("PhysicsMaterial_2nd0r")
@@ -17,17 +17,19 @@ script = ExtResource("1_5x5qq")
 [node name="Hexaogon" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_kn5a7")
+texture = ExtResource("2_upvab")
 
-[node name="the one that is real cool B))))))" type="CollisionPolygon2D" parent="."]
+[node name="main" type="CollisionPolygon2D" parent="."]
 scale = Vector2(0.15, 0.15)
-polygon = PackedVector2Array(-340, 1800, -1053.33, 1780, -2100, 13.3333, -1080, -1820, 1066.67, -1806.67, 2093.33, 0, 1080, 1800, 253.333, 1806.67, 246.667, 1560, 902.291, 1560.13, 1673.33, 206.667, 1086.67, 200, 1073.33, -206.667, 1646.67, -220, 898, -1562, -908, -1558, -1660, -220, -1093.33, -206.667, -1093.33, 200, -1693.33, 206.667, -906.667, 1560, -253.333, 1560)
+polygon = PackedVector2Array(-253.333, 1693.33, -980, 1693.33, -1953.33, 0, -980, -1693.33, 980, -1693.33, 1953.33, 0, 986.667, 1693.33, 246.667, 1693.33, 246.667, 1560, 902.291, 1560.13, 1706.67, 93.3333, 1093.33, 93.3333, 1093.33, -93.3333, 1713.33, -93.3333, 898, -1562, -908, -1558, -1713.33, -86.6667, -1093.33, -86.6667, -1093.33, 86.6667, -1713.33, 86.6667, -906.667, 1560, -253.333, 1560)
 
-[node name="the one that will be gone" type="CollisionPolygon2D" parent="."]
-unique_name_in_owner = true
-position = Vector2(0, -2)
-scale = Vector2(0.15, 0.149731)
-polygon = PackedVector2Array(-406.667, 2163.88, 373.333, 2177.24, 326.667, 1582.84, -313.333, 1582.84)
+[node name="escapernet" type="CollisionPolygon2D" parent="."]
+scale = Vector2(0.15, 0.15)
+polygon = PackedVector2Array(-253.333, 1693.33, -980, 1693.33, -1953.33, 0, -980, -1693.33, 980, -1693.33, 1953.33, 0, 986.667, 1693.33, 246.667, 1693.33, 233.333, 2146.67, 1240, 2146.67, 2506.67, 0, 1333.33, -2093.33, -1293.33, -2100, -2486.67, 40, -1346.67, 2113.33, -266.667, 2153.33)
+
+[node name="holewedge" type="CollisionPolygon2D" parent="."]
+scale = Vector2(0.15, 0.153201)
+polygon = PackedVector2Array(-406.667, 2163.88, 373.333, 2177.24, 326.667, 1527.4, -320, 1527.4)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_88w3q")

@@ -36,4 +36,6 @@ reset={
 
 [physics]
 
+common/physics_ticks_per_second=120
+common/max_physics_steps_per_frame=16
 2d/physics_engine="GodotPhysics2D"

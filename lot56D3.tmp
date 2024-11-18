@@ -1,0 +1,164 @@
+[gd_scene load_steps=26 format=3 uid="uid://crb07x34osmb5"]
+
+[ext_resource type="Texture2D" uid="uid://chq2m8gj6ngtm" path="res://src/gfx/ice.png" id="1_8ykba"]
+[ext_resource type="Script" path="res://lottery_scene.gd" id="1_qthf6"]
+[ext_resource type="PackedScene" uid="uid://dc0upisusvgm6" path="res://bowl_logo.tscn" id="2_d42h4"]
+[ext_resource type="PackedScene" uid="uid://bsnbsm18qquq8" path="res://lottery_logo.tscn" id="3_8h1xk"]
+[ext_resource type="PackedScene" uid="uid://c6g7a3ui7k75g" path="res://roller.tscn" id="5_q4idk"]
+[ext_resource type="PackedScene" uid="uid://bue1bjjsaawhu" path="res://floor.tscn" id="7_7kdui"]
+[ext_resource type="PackedScene" uid="uid://h0qgtj61o83s" path="res://wall.tscn" id="8_twjsa"]
+[ext_resource type="PackedScene" uid="uid://5oph7vfkiheq" path="res://winner.tscn" id="9_1ec1d"]
+[ext_resource type="Texture2D" uid="uid://bgwh6lk04ayck" path="res://src/gfx/teamimgs/17.png" id="10_bqd8c"]
+[ext_resource type="Script" path="res://winner.gd" id="10_on2t5"]
+[ext_resource type="Texture2D" uid="uid://cxc42bo4l6f6w" path="res://src/gfx/teamimgs/18.png" id="11_dnnvi"]
+[ext_resource type="Texture2D" uid="uid://b0x2do5qv1c80" path="res://src/gfx/teamimgs/19.png" id="12_sia3u"]
+[ext_resource type="Texture2D" uid="uid://b6oeujj1nk2jv" path="res://src/gfx/teamimgs/20.png" id="13_eacgg"]
+[ext_resource type="Texture2D" uid="uid://ca0fp8s2el8jb" path="res://src/gfx/teamimgs/21.png" id="14_t3wes"]
+[ext_resource type="Texture2D" uid="uid://bdsnmv1ix70wu" path="res://src/gfx/teamimgs/22.png" id="15_1m7s7"]
+[ext_resource type="Texture2D" uid="uid://dxxs02gij25ka" path="res://src/gfx/teamimgs/23.png" id="16_rktap"]
+[ext_resource type="Texture2D" uid="uid://b41xy3xfmo8yw" path="res://src/gfx/teamimgs/24.png" id="17_23cub"]
+[ext_resource type="Texture2D" uid="uid://dgplrhigydsq7" path="res://src/gfx/overlay_black.png" id="18_53qer"]
+[ext_resource type="Texture2D" uid="uid://jfovmg5ujptv" path="res://src/gfx/overlay_cyan.png" id="19_0cpp1"]
+[ext_resource type="Texture2D" uid="uid://b75tfm5qvyfry" path="res://src/gfx/overlay_red.png" id="20_oopgj"]
+[ext_resource type="Texture2D" uid="uid://dnyi7uwvh3cr8" path="res://src/gfx/overlay_orange.png" id="21_clhyb"]
+[ext_resource type="Texture2D" uid="uid://dffbwjy4qqi0x" path="res://src/gfx/overlay_green.png" id="22_e2ocx"]
+[ext_resource type="Texture2D" uid="uid://bv503typ4e6au" path="res://src/gfx/overlay_white.png" id="23_jvfbv"]
+[ext_resource type="Texture2D" uid="uid://ceicdvtatuw4h" path="res://src/gfx/overlay_yellow.png" id="24_kkncs"]
+[ext_resource type="Texture2D" uid="uid://l2g5x7v07qt0" path="res://src/gfx/overlay_purple.png" id="25_06c7n"]
+
+[node name="LotteryScene" type="Node2D"]
+script = ExtResource("1_qthf6")
+
+[node name="Ice" type="Sprite2D" parent="."]
+position = Vector2(83, 0)
+texture = ExtResource("1_8ykba")
+centered = false
+offset = Vector2(-1200, 0)
+
+[node name="roller" parent="." instance=ExtResource("5_q4idk")]
+position = Vector2(400, 640)
+
+[node name="lottery_logo" parent="." instance=ExtResource("3_8h1xk")]
+position = Vector2(400, 194)
+scale = Vector2(0.75, 0.75)
+
+[node name="floor" parent="." instance=ExtResource("7_7kdui")]
+position = Vector2(358, 991)
+
+[node name="left_wall" parent="." instance=ExtResource("8_twjsa")]
+position = Vector2(-100, 498)
+
+[node name="right_wall" parent="." instance=ExtResource("8_twjsa")]
+position = Vector2(900, 544)
+
+[node name="winner" parent="." instance=ExtResource("9_1ec1d")]
+position = Vector2(400, 640)
+script = ExtResource("10_on2t5")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 13.0
+offset_top = 27.0
+offset_right = 208.0
+offset_bottom = 381.0
+text = "24.				8 balls
+
+23.				7 balls
+
+22.				6 balls
+
+21.				5 balls
+
+20.				4 balls
+
+19.				3 balls
+
+18.				2 balls	
+
+17.				1 ball
+"
+
+[node name="17" type="Sprite2D" parent="."]
+position = Vector2(65, 361)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("10_bqd8c")
+
+[node name="18" type="Sprite2D" parent="."]
+position = Vector2(62, 318)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("11_dnnvi")
+
+[node name="19" type="Sprite2D" parent="."]
+position = Vector2(64, 268)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("12_sia3u")
+
+[node name="20" type="Sprite2D" parent="."]
+position = Vector2(64, 222)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("13_eacgg")
+
+[node name="21" type="Sprite2D" parent="."]
+position = Vector2(63, 176)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("14_t3wes")
+
+[node name="22" type="Sprite2D" parent="."]
+position = Vector2(63, 131)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("15_1m7s7")
+
+[node name="23" type="Sprite2D" parent="."]
+position = Vector2(63, 88)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("16_rktap")
+
+[node name="24" type="Sprite2D" parent="."]
+position = Vector2(62, 39)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("17_23cub")
+
+[node name="OverlayBlack" type="Sprite2D" parent="."]
+position = Vector2(172, 40)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("18_53qer")
+
+[node name="OverlayCyan" type="Sprite2D" parent="."]
+position = Vector2(172, 84)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("19_0cpp1")
+
+[node name="OverlayRed" type="Sprite2D" parent="."]
+position = Vector2(172, 357)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("20_oopgj")
+
+[node name="OverlayOrange" type="Sprite2D" parent="."]
+position = Vector2(172, 315)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("21_clhyb")
+
+[node name="OverlayGreen" type="Sprite2D" parent="."]
+position = Vector2(172, 225)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("22_e2ocx")
+
+[node name="white" type="Sprite2D" parent="."]
+position = Vector2(172, 178)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("23_jvfbv")
+
+[node name="OverlayYellow" type="Sprite2D" parent="."]
+position = Vector2(172, 275)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("24_kkncs")
+
+[node name="OverlayPurple" type="Sprite2D" parent="."]
+position = Vector2(172, 130)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("25_06c7n")
+
+[node name="bowl_logo" parent="." instance=ExtResource("2_d42h4")]
+position = Vector2(87, 872)
+scale = Vector2(0.2, 0.2)
+
+[connection signal="body_entered" from="floor" to="floor" method="_on_body_entered"]
