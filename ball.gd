@@ -10,6 +10,7 @@ var team_to_colour = {
 	6: preload("res://src/gfx/overlay_purple.png"),
 	7: preload("res://src/gfx/overlay_white.png"),
 	8: preload("res://src/gfx/overlay_brown.png"),
+	9: preload("res://src/gfx/overlay_pink.png")
 }
 
 # Called when the node enters the scene tree for the first time.
@@ -27,6 +28,7 @@ func get_team():
 	
 func set_team(input_team):
 	team = input_team
+	print(team)
 	update_texture()
 	
 func update_texture():

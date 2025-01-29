@@ -9,6 +9,7 @@ var teampics = {
 	6: preload("res://src/gfx/teamimgs/22.png"),
 	7: preload("res://src/gfx/teamimgs/23.png"),
 	8: preload("res://src/gfx/teamimgs/24.png"),
+	9: preload("res://src/gfx/teamimgs/25.png")
 }
 
 # Called when the node enters the scene tree for the first time.

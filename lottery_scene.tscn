@@ -38,7 +38,6 @@ position = Vector2(900, 544)
 
 [node name="roller" parent="." instance=ExtResource("5_q4idk")]
 position = Vector2(400, 640)
-scale = Vector2(1, 1)
 
 [node name="winner" parent="." instance=ExtResource("9_1ec1d")]
 position = Vector2(400, 640)

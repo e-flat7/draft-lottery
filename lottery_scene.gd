@@ -2,11 +2,12 @@ extends Node2D
 
 var ball_scene = preload("res://ball.tscn")
 var balls = []
-var num_of_teams = 8
-var teamlist = [1, 2, 3, 4, 5, 6, 7 ,8]
+var num_of_teams = 9
+var teamlist = [1, 2, 3, 4, 5, 6, 7 , 8, 9]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Engine.time_scale = 0.5
 	ball_spawn(num_of_teams)
 			
 			
@@ -46,8 +47,8 @@ func _process(delta):
 			$floor.stored_winner = -1
 			num_of_teams -= 1
 			if num_of_teams <= 0:
-				num_of_teams = 8
-				teamlist = [1, 2, 3, 4, 5, 6, 7 ,8]
+				num_of_teams = 9
+				teamlist = [1, 2, 3, 4, 5, 6, 7 ,8, 9]
 		ball_spawn(num_of_teams)
 		$roller.reset()
 		$winner.texture = null
